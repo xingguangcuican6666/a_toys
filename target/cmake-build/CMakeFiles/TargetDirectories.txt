@@ -1,0 +1,3 @@
+/home/xingguangcuican/project/a_bad_way/target/cmake-build/CMakeFiles/NativeBridge.dir
+/home/xingguangcuican/project/a_bad_way/target/cmake-build/CMakeFiles/edit_cache.dir
+/home/xingguangcuican/project/a_bad_way/target/cmake-build/CMakeFiles/rebuild_cache.dir

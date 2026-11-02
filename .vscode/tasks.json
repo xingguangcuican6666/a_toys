@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "java: generate JNI headers",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "compile"
+            ],
+            "problemMatcher": [
+                "$java"
+            ]
+        },
+        {
+            "label": "native: configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}",
+                "-B",
+                "${workspaceFolder}/target/cmake-build"
+            ],
+            "dependsOn": [
+                "java: generate JNI headers"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "native: build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/target/cmake-build"
+            ],
+            "dependsOn": [
+                "native: configure"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build: Java and native",
+            "dependsOn": [
+                "native: build"
+            ],
+            "dependsOrder": "sequence"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "includePath": [
+                "${workspaceFolder}/src/main/native",
+                "${workspaceFolder}/target/native-headers",
+                "/usr/lib/jvm/java-25-openjdk/include",
+                "/usr/lib/jvm/java-25-openjdk/include/linux"
+            ]
+        }
+    ],
+    "version": 4
+}

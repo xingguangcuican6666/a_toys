@@ -1,0 +1,27 @@
+{
+    "screen": [
+        {
+            "id": "main",
+            "title": "A Bad Way",
+            "description1": "永无光明之日，只有黑暗与绝望",
+            "description2": "沉溺于幻想，迷失于现实",
+            "description3": "或许，还有余地...",
+            "description4": "结束了...",
+            "end1": "再见，再见...",
+            "end2": "就算不是现实...",
+            "end3": "结束了...?",
+            "end4": "结束了...",
+            "start1": "开始..或许不是旅程...",
+            "start2": "不要...不要...",
+            "start3": "...",
+            "start4": "真的吗？",
+            "setting": "设置喵",
+            "about": "关于我喵",
+            "exit": "退出",
+            "exit1": "真的要退出喵？"
+        },
+        {
+            "id": "setting"
+        }
+    ]
+}

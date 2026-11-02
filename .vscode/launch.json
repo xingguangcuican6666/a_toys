@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Main with JNI",
+            "request": "launch",
+            "mainClass": "com.github.xingguangcuican.Main",
+            "vmArgs": "--enable-native-access=ALL-UNNAMED -Djava.library.path=${workspaceFolder}/target/native",
+            "preLaunchTask": "build: Java and native"
+        }
+    ]
+}
